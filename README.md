@@ -29,14 +29,16 @@ run - make clean
 
 | `code/00_clean_data.R` | **Cleans data** and saves `data/clean_data.rds`|
 
-
-**| `code/01_table_one.R` | Creates Table 1 and saves it to `output/table_one.rds`|**
-
+| `code/01_table_one.R` | **Creates Table 1** and saves it to `output/table_one.rds`|
 
 | `code/02_figure_one.R` | **Creates Figure 1** and saves it to `output/figure_one.png`|
+
 | `code/03_render_report.R` | **Renders** `project_2.Rmd` into `project_2.html`|
+
 | `project_2.Rmd` | R Markdown report that reads in the saved table and figure|
+
 | `Makefile` | The build steps and their dependencies |
+
 | `output/` | Folder for the generated table and figure |
 
 ## Code for the required table
