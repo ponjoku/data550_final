@@ -11,6 +11,10 @@ output/table_one.rds: code/01_table_one.R data/clean_data.rds
 output/figure_one.png: code/02_figure_one.R data/clean_data.rds
 	Rscript code/02_figure_one.R
 
+.PHONY: install
+install:
+	Rscript -e "renv::restore(prompt = FALSE)"
+	
 .PHONY: clean
 clean:
 	rm -f output/*.rds && rm -f output/*.png

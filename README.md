@@ -10,13 +10,23 @@ This report analyzes data from 1,829 patients with sickle cell disease (SCD)
 who attended four clinics in eastern Uganda (Mbale, Soroti, Atutur, and Ngora) 
 between February and August 2018.
 
+## Synchronize the package environment
+
+This project uses `renv` to record the exact package versions used to build the report.
+After cloning the repository, run this in the terminal from the project folder:
+
+    make install
+
+This restores all required packages from `renv.lock`. Then run `make` to build the report.
+
 
 ## How to generate the final report
+**This project uses `renv` to record the exact package versions used to build the report.**
 
 1. Clone this repository
-2. Install the required R packages (see below).
-3. Run: make in the terminal 
-
+2. Move into project_2 directory 
+2. Run make install in the terminal
+3. Build the report: run make project_2.html in the terminal 
 
 This runs every step in order and produces `project_2.html` in the project folder.
 
@@ -52,15 +62,5 @@ Figure 1 is created in **`code/02_figure_one.R`** using `ggplot2`.
 The script saves the figure to `output/figure_one.png`, and the report includes 
 it with `knitr::include_graphics()`.
 
-## Required R packages
 
-`here`, 
-`readxl`, 
-`dplyr`, 
-`labelled`, 
-`gtsummary`, 
-`ggplot2`, 
-`scales`, 
-`knitr`, 
-`rmarkdown`
 
