@@ -10,16 +10,6 @@ This report analyzes data from 1,829 patients with sickle cell disease (SCD)
 who attended four clinics in eastern Uganda (Mbale, Soroti, Atutur, and Ngora) 
 between February and August 2018.
 
-## Synchronize the package environment
-
-This project uses `renv` to record the exact package versions used to build the report.
-After cloning the repository, run this in the terminal from the project folder:
-
-    make install
-
-This restores all required packages from `renv.lock`. Then run `make` to build the report.
-
-
 ## How to generate the final report
 **This project uses `renv` to record the exact package versions used to build the report.**
 
